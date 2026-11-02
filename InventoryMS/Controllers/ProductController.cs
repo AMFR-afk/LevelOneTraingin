@@ -1,3 +1,4 @@
+using InventoryMS;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyApp.Namespace
@@ -5,9 +6,15 @@ namespace MyApp.Namespace
     public class ProductController : Controller
     {
         // GET: ProductController
+        private readonly Bridge _bridge; 
+        public ProductController(Bridge b)
+        {
+            _bridge = b;
+        }
         public ActionResult PrintAll()
         {
-            return View();
+            var productList = _bridge.Products.ToList();
+            return View(productList);
         }
 
         public ActionResult AddProduct()
