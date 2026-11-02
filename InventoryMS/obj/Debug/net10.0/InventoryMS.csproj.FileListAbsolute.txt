@@ -209,6 +209,6 @@ C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\o
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\InventoryMS.pdb
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\InventoryMS.genruntimeconfig.cache
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\ref\InventoryMS.dll
-C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\Views\Shared\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\jnmeqfxkfl-{0}-rtyly7wlnv-rtyly7wlnv.gz
-C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\rm1k5ubahv-{0}-rtyly7wlnv-rtyly7wlnv.gz
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\jnmeqfxkfl-{0}-u3nlsf8ek3-u3nlsf8ek3.gz
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\rm1k5ubahv-{0}-u3nlsf8ek3-u3nlsf8ek3.gz
