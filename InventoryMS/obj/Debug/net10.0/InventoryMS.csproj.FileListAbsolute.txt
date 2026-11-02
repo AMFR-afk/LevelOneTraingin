@@ -134,7 +134,6 @@ C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\o
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\bundle\InventoryMS.styles.css
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\projectbundle\InventoryMS.bundle.scp.css
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\6wjdfgac4c-{0}-b9sayid5wm-b9sayid5wm.gz
@@ -199,8 +198,6 @@ C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\o
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\qhpkuuhipl-{0}-9vr69e8ynj-9vr69e8ynj.gz
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\rc21s6crxw-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\2wx7mhhrtl-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\jnmeqfxkfl-{0}-u3nlsf8ek3-u3nlsf8ek3.gz
-C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\rm1k5ubahv-{0}-u3nlsf8ek3-u3nlsf8ek3.gz
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\staticwebassets.development.json
@@ -212,3 +209,6 @@ C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\o
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\InventoryMS.pdb
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\InventoryMS.genruntimeconfig.cache
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\ref\InventoryMS.dll
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\Views\Shared\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\jnmeqfxkfl-{0}-rtyly7wlnv-rtyly7wlnv.gz
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\rm1k5ubahv-{0}-rtyly7wlnv-rtyly7wlnv.gz
