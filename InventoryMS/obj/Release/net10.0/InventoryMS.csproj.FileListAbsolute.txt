@@ -1,0 +1,10 @@
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.csproj.AssemblyReference.cache
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/rpswa.dswa.cache.json
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.AssemblyInfoInputs.cache
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.AssemblyInfo.cs
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.csproj.CoreCompileInputs.cache
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.RazorAssemblyInfo.cache
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.RazorAssemblyInfo.cs
+/workspaces/LevelOneTraingin/InventoryMS/obj/Release/net10.0/InventoryMS.sourcelink.json

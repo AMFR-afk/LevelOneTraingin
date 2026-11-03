@@ -50,8 +50,13 @@ namespace MyApp.Namespace
         [HttpPost]
         public async Task<IActionResult> EditProduct(int Id)
         {
-            var avalable = await _bridge.Products.FindAsync(x => x.Id == Id);
-            return View();
+            var avalable = await _bridge.Products.FindAsync(Id);
+            if (avalable == null)
+            {
+                return NotFound();
+            }
+
+            return View(avalable);
         }
 
         //-------------------DeleteProduct----------------------
