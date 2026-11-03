@@ -1,7 +1,6 @@
-using InventoryMS;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyApp.Namespace
+namespace InventoryMS.Controllers
 {
     public class ProductController : Controller
     {
@@ -37,17 +36,10 @@ namespace MyApp.Namespace
                 return RedirectToAction("PrintAll");
 
             }
-            return View();
+            return View(product);
         }
 
         //-------------------EditProduct----------------------
-
-        public ActionResult EditProduct()
-        {
-            return View();
-        }
-
-        [HttpPost]
         public async Task<IActionResult> EditProduct(int Id)
         {
             var avalable = await _bridge.Products.FindAsync(Id);
@@ -59,13 +51,58 @@ namespace MyApp.Namespace
             return View(avalable);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> EditProduct(Product product)
+        {
+            var avalable = await _bridge.Products.FindAsync(product.Id);
+            if (avalable == null)
+            {
+                return RedirectToAction("PrintAll");
+            }
+            if (ModelState.IsValid)
+            {
+                avalable.Name = product.Name;
+                avalable.Price = product.Price;
+                avalable.Quantity = product.Quantity;
+                avalable.Category = product.Category;
+                avalable.Description = product.Description;
+                await _bridge.SaveChangesAsync();
+                return RedirectToAction("PrintAll");
+            }
+
+            return View(product);
+        }
+
         //-------------------DeleteProduct----------------------
 
-
-        public ActionResult DeleteProduct()
+        [HttpGet]
+        public async Task<IActionResult> DeleteProduct(int Id)
         {
-            return View();
+            var avalable = await _bridge.Products.FindAsync(Id);
+
+            if (avalable == null)
+            {
+                return NotFound();
+            }
+
+            return View(avalable);
         }
+
+        [HttpPost, ActionName("DeleteProduct")]
+        public async Task<IActionResult> Delete(int Id)
+        {
+            var avalable = await _bridge.Products.FindAsync(Id);
+            if (avalable == null)
+            {
+                return RedirectToAction("PrintAll");
+            }
+
+            _bridge.Products.Remove(avalable);
+            await _bridge.SaveChangesAsync();
+            return RedirectToAction("PrintAll");
+        }
+
+
 
     }
 }

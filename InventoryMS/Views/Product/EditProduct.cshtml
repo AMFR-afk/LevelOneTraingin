@@ -1,5 +1,41 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model Product
+
+@using (Html.BeginForm("EditProduct", "Product", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(x => x.Description)
+        @Html.TextBoxFor(x => x.Description)
+        @Html.ValidationMessageFor(x => x.Description)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(x => x.Price)
+        @Html.TextBoxFor(x => x.Price)
+        @Html.ValidationMessageFor(x => x.Price)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(x => x.Quantity)
+        @Html.TextBoxFor(x => x.Quantity)
+        @Html.ValidationMessageFor(x => x.Quantity)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(x => x.Category)
+        @Html.TextBoxFor(x => x.Category)
+        @Html.ValidationMessageFor(x => x.Category)
+    </div>
+    <br />
+
+    <input type="submit" value="Edit" />
 }

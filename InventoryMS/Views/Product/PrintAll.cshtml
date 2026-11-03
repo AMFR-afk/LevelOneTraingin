@@ -1,6 +1,6 @@
 ﻿@model List<Product>
     
-<table class="table table-dark">
+<table class="table ">
     <thead>
         <tr>
             <th>Name</th>
@@ -22,8 +22,8 @@
                     <td>@x.Price</td>
                     <td>@x.Quantity</td>
                     <td>@x.Category</td>
-                    <td><a href="">Edit</a></td>
-                    <td><a href="">Delete</a></td>
+                    <td><a asp-action="EditProduct" asp-controller="Product" asp-route-id="@x.Id">Edit</a></td>
+                    <td><a asp-action="DeleteProduct" asp-controller="Product" asp-route-id="@x.Id" class="btn btn-red">Delete</a></td>
                 </tr>
             }
         </tbody>
@@ -37,4 +37,11 @@
             </tr>
         </tbody>
     }
-</table>
+
+    <tbody>
+        <tr>
+            <td colspan="6" class="text-center"><a asp-action="AddProduct" asp-controller="Product"
+                                                       class="btn btn-dark">Add Product</a></td>
+            </tr>
+        </tbody>
+    </table>
