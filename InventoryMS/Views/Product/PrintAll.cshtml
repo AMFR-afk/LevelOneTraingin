@@ -22,31 +22,32 @@
                     <td>@x.Price</td>
                     <td>@x.Quantity</td>
                     <td>@x.Category</td>
-                    @if(User.IsInRole("Admin"))
+                    @if (User.IsInRole("Admin"))
                     {
-                    <td><a asp-action="EditProduct" asp-controller="Product" asp-route-id="@x.Id">Edit</a></td>
-                    <td><a asp-action="DeleteProduct" asp-controller="Product" asp-route-id="@x.Id" class="btn btn-red">Delete</a></td>
-                    }
-                </tr>
-            }
-        </tbody>
-    }
+                        <td><a asp-action="EditProduct" asp-controller="Product" asp-route-id="@x.Id">Edit</a></td>
+                        <td><a asp-action="DeleteProduct" asp-controller="Product" asp-route-id="@x.Id"
+                                   class="btn btn-red">Delete</a></td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        }
 
     else
-    {
-        <tbody>
-            <tr>
-                <td colspan="6" class="text-center">No product is available.</td>
-            </tr>
-        </tbody>
-    }
-    @if(User.IsInRole("Admin"))
-    {
-    <tbody>
-        <tr>
-            <td colspan="6" class="text-center"><a asp-action="AddProduct" asp-controller="Product"
-                                                       class="btn btn-dark">Add Product</a></td>
-            </tr>
-        </tbody>
-    }
-    </table>
+        {
+            <tbody>
+                <tr>
+                    <td colspan="7" class="text-center">No product is available.</td>
+                </tr>
+            </tbody>
+        }
+        @if (User.IsInRole("Admin"))
+        {
+            <tbody>
+                <tr>
+                    <td colspan="7" class="text-center"><a asp-action="AddProduct" asp-controller="Product"
+                                                               class="btn btn-dark">Add Product</a></td>
+                    </tr>
+                </tbody>
+            }
+        </table>

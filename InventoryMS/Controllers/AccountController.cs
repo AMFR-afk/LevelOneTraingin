@@ -24,6 +24,7 @@ namespace InventoryMS.Controllers
             _roleManager = roleManager;
         }
 
+        //-------------------Login----------------------
 
         [HttpGet]
         public IActionResult Login()
@@ -31,7 +32,6 @@ namespace InventoryMS.Controllers
             return View();
         }
 
-        //-------------------Login----------------------
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -42,7 +42,7 @@ namespace InventoryMS.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, isPersistent: false, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("PrintAll");
+                    return RedirectToAction("PrintAll", "Product");
                 }
                 ModelState.AddModelError(string.Empty, "The Email or Password is incorrect");
             }
@@ -50,10 +50,12 @@ namespace InventoryMS.Controllers
         }
 
         //-------------------Logout----------------------
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Login");
+            return RedirectToAction("Login", "Account");
         }
 
         //-------------------Register----------------------
@@ -74,7 +76,7 @@ namespace InventoryMS.Controllers
 
                 if (result.Succeeded)
                 {
-                    //await _userManager.AddToRoleAsync(user, "User");
+                    await _userManager.AddToRoleAsync(user, "User");
                     _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("PrintAll", "Product");
                 }
@@ -89,21 +91,21 @@ namespace InventoryMS.Controllers
 
         //-------------------Roles----------------------
 
-        public async Task<string> CreateRoles()
-        {
-            // فحص إذا دور الـ Admin مش موجود، بيعمله إنشاء
-            if (!await _roleManager.RoleExistsAsync("Admin"))
-            {
-                await _roleManager.CreateAsync(new IdentityRole("Admin"));
-            }
+        // public async Task<string> CreateRoles()
+        // {
+        //     // فحص إذا دور الـ Admin مش موجود، بيعمله إنشاء
+        //     if (!await _roleManager.RoleExistsAsync("Admin"))
+        //     {
+        //         await _roleManager.CreateAsync(new IdentityRole("Admin"));
+        //     }
 
-            // فحص إذا دور الـ User مش موجود، بيعمله إنشاء
-            if (!await _roleManager.RoleExistsAsync("User"))
-            {
-                await _roleManager.CreateAsync(new IdentityRole("User"));
-            }
+        //     // فحص إذا دور الـ User مش موجود، بيعمله إنشاء
+        //     if (!await _roleManager.RoleExistsAsync("User"))
+        //     {
+        //         await _roleManager.CreateAsync(new IdentityRole("User"));
+        //     }
 
-            return "Roles Created Successfully!";
-        }
+        //     return "Roles Created Successfully!";
+        // }
     }
 }
