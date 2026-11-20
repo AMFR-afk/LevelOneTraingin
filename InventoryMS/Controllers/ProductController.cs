@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
 namespace InventoryMS.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         // GET: ProductController
@@ -20,6 +21,7 @@ namespace InventoryMS.Controllers
 
         //-------------------AddProduct----------------------
 
+        [Authorize(Roles = "Admin")]
         public ActionResult AddProduct()
         {
 
@@ -27,6 +29,8 @@ namespace InventoryMS.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddProduct(Product product)
         {
             if (ModelState.IsValid)
@@ -40,6 +44,7 @@ namespace InventoryMS.Controllers
         }
 
         //-------------------EditProduct----------------------
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> EditProduct(int Id)
         {
             var avalable = await _bridge.Products.FindAsync(Id);
@@ -52,6 +57,8 @@ namespace InventoryMS.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> EditProduct(Product product)
         {
             var avalable = await _bridge.Products.FindAsync(product.Id);
@@ -76,6 +83,7 @@ namespace InventoryMS.Controllers
         //-------------------DeleteProduct----------------------
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteProduct(int Id)
         {
             var avalable = await _bridge.Products.FindAsync(Id);
@@ -89,6 +97,8 @@ namespace InventoryMS.Controllers
         }
 
         [HttpPost, ActionName("DeleteProduct")]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int Id)
         {
             var avalable = await _bridge.Products.FindAsync(Id);
@@ -101,8 +111,5 @@ namespace InventoryMS.Controllers
             await _bridge.SaveChangesAsync();
             return RedirectToAction("PrintAll");
         }
-
-
-
     }
 }

@@ -1,0 +1,20 @@
+﻿@model InventoryMS.Models.LoginViewModel
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(x => x.Password)
+        @Html.PasswordFor(x => x.Password) 
+        @Html.ValidationMessageFor(x => x.Password)
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Log in</button>
+}

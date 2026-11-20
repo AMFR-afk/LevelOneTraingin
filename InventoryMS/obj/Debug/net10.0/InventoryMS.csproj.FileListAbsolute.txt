@@ -212,3 +212,4 @@ C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\o
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\jnmeqfxkfl-{0}-u3nlsf8ek3-u3nlsf8ek3.gz
 C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\obj\Debug\net10.0\compressed\rm1k5ubahv-{0}-u3nlsf8ek3-u3nlsf8ek3.gz
+C:\Users\abood\OneDrive\المستندات\GitHub\LevelOneTraingin\InventoryMS\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace InventoryMS;
 
-public class Bridge :DbContext
+public class Bridge :IdentityDbContext
 {
     public Bridge(DbContextOptions<Bridge> options) : base(options)
     {

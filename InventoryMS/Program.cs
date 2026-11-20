@@ -1,4 +1,5 @@
 using InventoryMS;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Bridge>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("InventoryPortal")));
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<Bridge>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
